@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using CarCRUD.Data; // Corrigido para CarCRUD.Data
+using CarCRUD.Data; 
 
 #nullable disable
 
-namespace CarCRUD.Migrations // Corrigido para CarCRUD.Migrations
+namespace CarCRUD.Migrations 
 {
-    [DbContext(typeof(ContextoCarro))] // Corrigido para ContextoCarro
+    [DbContext(typeof(ContextoCarro))] 
     public class CarCRUDModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

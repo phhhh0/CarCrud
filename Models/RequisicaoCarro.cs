@@ -1,3 +1,3 @@
-﻿namespace CarCRUD.Models; // Alterado para CarCRUD.Models
+﻿namespace CarCRUD.Models; 
 
-public record RequisicaoCarro(string modelo); // RequisicaoPessoa → RequisicaoCarro, nome → modelo
+public record RequisicaoCarro(string modelo); 

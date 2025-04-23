@@ -1,18 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using CarCRUD.Data;
-using Microsoft.EntityFrameworkCore.Infrastructure; // Corrigido para CarCRUD.Data
+using Microsoft.EntityFrameworkCore.Infrastructure; 
 
 #nullable disable
 
-namespace CarCRUD.Migrations // Corrigido para CarCRUD.Migrations
+namespace CarCRUD.Migrations 
 {
-    [DbContext(typeof(ContextoCarro))] // Corrigido para ContextoCarro
+    [DbContext(typeof(ContextoCarro))] 
     [Migration("20250422150916_Inicial")]
     public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            // Criação da tabela Carros
+           
             migrationBuilder.CreateTable(
                 name: "Carros",
                 columns: table => new
@@ -28,7 +28,7 @@ namespace CarCRUD.Migrations // Corrigido para CarCRUD.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            // Remoção da tabela Carros caso precise fazer rollback
+           
             migrationBuilder.DropTable(name: "Carros");
         }
     }
